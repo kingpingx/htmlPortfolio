@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./experience.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="carousel">
+    <div class="carousel-container" tabindex="0">
+      <div class="carousel-image-container">
+        <div class="slides">
+          <img src="/18.jpg" alt="Home" class="">
+          <img src="/19.jpg" alt="Work" class="">
+          <img src="/bg form.jpg" alt="fun" class="">
+        </div>
+      </div>
+      <button class="carousel-button prev-btn" type="button" aria-label="Previous">
+        <svg class="carousel-button-icon" viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path>
+        </svg>
+      </button>
+      <button class="carousel-button next-btn" type="button" aria-label="Next">
+        <svg class="carousel-button-icon" viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180)"></path>
+        </svg>
+      </button>
+      <ol class="carousel-page-dots">
+        <li class="dot" aria-label="Page dot 1"></li>
+        <li class="dot" aria-label="Page dot 2"></li>
+        <li class="dot" aria-label="Page dot 3"></li>
+        <li class="dot is-selected" aria-label="Page dot 4" aria-current="step"></li>
+        <li class="dot" aria-label="Page dot 5"></li>
+        <li class="dot" aria-label="Page dot 6"></li>
+      </ol>
+    </div>
+    <div class="info">
+      <div class="pagination">
+        <button class="btn-gallery-left" aria-label="Previous">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="8" viewBox="0 0 19 8">
+            <path d="M1.94974747,3 L19,3 L19,4 L1.70710678,4 L4.24264069,6.53553391 L3.53553391,7.24264069 L-2.22044605e-16,3.62132034 L3.53553391,0 L4.24264069,0.707106781 L1.94974747,3 Z"></path>
+          </svg>
+        </button>
+        <span class="current">4</span> / <span class="total">6</span>
+        <button class="btn-gallery-right" aria-label="Next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="8" viewBox="0 0 19 8">
+            <path d="M1.94974747,3 L19,3 L19,4 L1.70710678,4 L4.24264069,6.53553391 L3.53553391,7.24264069 L-2.22044605e-16,3.62132034 L3.53553391,0 L4.24264069,0.707106781 L1.94974747,3 Z" transform="matrix(-1 0 0 1 19 0)"></path>
+          </svg>
+        </button>
+      </div>
+      <h6 class="title">Case Studies</h6>
+      <div class="description">
+        <p>A primary focus of the website is to showcase the brand design work that Studio Mega has delivered to their clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="./experience.js"></script>
+</body>
+</html>

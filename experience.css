@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+@keyframes fade-out {
+  0% {
+    display: block;
+    width: 100%;
+  }
+  100% {
+    display: none;
+    width: 0%;
+  }
+}
+.carousel {
+  display: flex;
+}
+.carousel .carousel-container {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+.carousel .carousel-container .carousel-image-container {
+  height: inherit;
+  width: inherit;
+  position: relative;
+}
+.carousel .carousel-container .carousel-image-container .slides {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
+}
+.carousel .carousel-container .carousel-image-container .slides img {
+  height: 100%;
+  width: 100%;
+  transition-property: width;
+  animation: fade-out 1s linear;
+}
+.carousel .carousel-container .carousel-button {
+  position: absolute;
+  background-color: white;
+  width: 30px;
+}
+.carousel .carousel-container .carousel-button .carousel-button-icon {
+  width: 10px;
+}
+.carousel .carousel-container .prev-btn {
+  left: 0;
+}
+.carousel .carousel-container .next-btn {
+  right: 0;
+}
+.carousel .carousel-container .carousel-page-dots li {
+  list-style: none;
+  width: 40px;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: block;
+}/*# sourceMappingURL=experience.css.map */

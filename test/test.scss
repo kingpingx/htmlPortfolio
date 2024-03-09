@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+body.drag * {
+    user-select: none;
+}
+.laptop {
+    position: relative;
+    width: 900px;
+    margin: auto;
+}
+.laptop .frame,
+.laptop img {
+    width: 100%;
+}
+.laptop .frame {
+    position: absolute;
+}
+.image-source {
+    text-align: right;
+}
+.file label, .file input {
+    display: block;
+}
+.file input {
+    width: 100%;
+    font-size: 1.2em;
+    pading: 5px 10px;
+    box-sizing: border-box;
+}
+#term {
+    --size: 0.7;
+    position: absolute;
+    width: 400px;
+    transform: var(--transform);
+    transform-origin: 0 0;
+    height: 250px;
+}
+.point {
+    position: absolute;
+    margin-left: -5px;
+    margin-top: -5px;
+    width: 10px;
+    height: 10px;
+    background: blue;
+    border-radius: 50%;
+    z-index: 100;
+    cursor: pointer;
+}
+.output h2 {
+    margin: 0;
+}
+.output {
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    z-index: 200;
+    box-sizing: border-box;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+.output pre {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.laptop:not(.points) .point {
+    display: none;
+} 
+.point-1 {
+   left: 166px;
+   top: 172px;
+}
+.point-2 {
+   left: 590.5px;
+   top: 139px;
+}
+.point-3 {
+   left: 626.5px;
+   top: 418px;
+}
+.point-4 {
+   left: 197.5px;
+   top: 460px;
+}
+aside.output {
+    transition: 1s transform linear;
+    background: white;
+}
+.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 400;
+}
+.open button {
+    display: none;
+}
+@media screen and (max-width: 1400px) {
+    body:not(.sidebar) aside.output {
+        transform: translateX(-100%);
+    }
+    body.sidebar #close {
+        display: block;
+    }
+    body:not(.sidebar) #open {
+        display: block;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Computer Rotation Animation</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="laptop points">
+        <div class="frame">
+            <img id="input" src="https://jcubic.pl/laptop.jpg" alt="Laptop"/>
+            <p class="image-source">Image taken from <a href="https://pixabay.com/pl/photos/laptop-wideo-netflix-online-5335884/">Pixabay</a></p>
+        </div>
+        <div id="term"></div>
+        <div class="point point-1"></div>
+        <div class="point point-2"></div>
+        <div class="point point-3"></div>
+        <div class="point point-4"></div>
+    </div>
+    <div class="open">
+        <button id="open">&gt;&gt;&gt;</button>
+        <button id="close">&lt;&lt;&lt;</button>
+    </div>
+    <aside class="output">
+        <p>Drag points to change 3D transformation to make terminal fit the image</p>
+        <p>See also the fork with <a href="https://codepen.io/jcubic/full/OJdazLB" target="top">Matrix Rain on Canvas</a>
+        <div class="file">
+            <label for="file">
+                URL of the image file
+            </label>
+            <input id="file" value="https://jcubic.pl/laptop.jpg"/>
+        </div>
+        <div>
+            <label for="points">
+                Show points
+            </label>
+            <input id="points" type="checkbox" checked/>
+        </div>
+        <h3>CSS Output</h3>
+        <pre></pre>
+    </aside>
+  <script src="computer.js"></script>
+</body>
+</html>

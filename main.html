@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="//db.onlinewebfonts.com/c/29800a9e7d146302b8ed9ad2f848db63?family=Druk+Wide+Web+Bold" rel="stylesheet"
+        type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <section class="homeSection" id="home">
+        <div class="OuterContainer" id="homeContainer">
+            <div class="stagePerspective">
+                <main class="stageContainer" style="transform: translate3d(0px, 0px, 0px);">
+                    <div class="stage">
+                        <ul id="mainProjectsContainer" class="projectsLinksContainer introProjects">
+                            <li class="projectsLi" data-barba="HomeTransition" id="chat-up"
+                                onclick="openProject(0, 'ChatUp')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="Feb - 2017"
+                                        data-barba="HomeTransition" class="">Chat Up</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(1, 'EduCare')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2018"
+                                        data-barba="HomeTransition" class="">Edu-care</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(2, 'Avekshaka')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2018"
+                                        data-barba="HomeTransition" class="">Avekshaka</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(3, 'CampusTube')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2017"
+                                        data-barba="HomeTransition" class="">Campus Tube</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(4, 'Vizit')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2017"
+                                        data-barba="HomeTransition" class="">Vizit</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(5, 'Speech2Text')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2013"
+                                        data-barba="HomeTransition">Text2Speech <br> Speech2Text</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(6, 'TheCodersBank')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2016"
+                                        data-barba="HomeTransition" class="">The Coder's Bank</a></div>
+                            </li>
+                            <li class="projectsLi" data-barba="HomeTransition" onclick="openProject(7, 'BouncingBall')">
+                                <div class="projectLinkLi introProjectContainer"><a
+                                        href="javascript:delay('#projects');" data-info="2017"
+                                        data-barba="HomeTransition" class="">Bouncing<br>Ball</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <header class="header" id="headerContainer">
+            <div class="logo">
+                <strong> Prabal <br> Pandey </strong>
+            </div>
+            <div class="info">
+                <div class="left">
+                    <div class="contact">
+                        <ul>
+                            <li>Gurgaon, Haryana</li>
+                            <li class="email"><a style="text-decoration: none; color: aliceblue;"
+                                    href="mailto:i.prabal19@gmail.com"><strong>i.prabal19@gmail.com</strong></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <nav class="links">
+                        <ul>
+                            <li class="about-li">
+                                <span>01</span>
+                                <strong>about</strong>
+                            </li>
+                            <li class="experience-li">
+                                <a href="/experience/">
+                                    <span>02</span>
+                                    <strong>Experience</strong>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="education-li">
+                                <a href="/education/">
+                                    <span>02</span>
+                                    <strong>Education</strong>
+                                </a>
+                            </li>
+                            <li class="education-li">
+                                <a href="/education/">
+                                    <span>03</span>
+                                    <strong>Blogs</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="right">
+                    <nav class="social">
+                        <ul>
+                            <li><a class="no-barba" href="/" target="_blank" rel="noopener"><span>04</span>
+                                    <strong>Old Portfolio</strong></a></li>
+                            <li><a class="no-barba" href="/" target="_blank" rel="noopener"><span>05</span>
+                                    <strong>Connect</strong></a></li>
+                            <li><a class="no-barba" href="/" target="_blank" rel="noopener"><span>06</span>
+                                    <strong>linkedin</strong></a></li>
+                        </ul>
+                    </nav>
+                    <div class="color-mode">
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Copyright © 2023 Prabal Pandey All rights reserved.</div>
+        </header>
+    </section>
+    <section class="projectSection" id="projects">
+        <div
+            style="z-index: 1000; position: relative;height:100%; width: 100%; display: flex; padding: 2rem 0rem 0rem 2rem; flex-direction: row; box-sizing: border-box; gap: 3rem;">
+            <div style="height:100%; width: 100%; display: flex; flex-direction: column;">
+                <div class="project-heading">
+                    Chat Up
+                </div>
+                <div style="height:100%; width: 100%; display: flex; flex-direction: row; justify-content: space-around; gap: 1rem; padding: 1rem 0rem 1rem 1rem;">
+                    <div class="project-container">
+                        <div class="project-body">
+                            <div class="project-image" style="background-image: url('18.jpg');
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;">
+                            </div>
+                            <div class="project-detail-container">
+                                <div class="project-header">
+                                    <span style="background-image: url('githubRepo.svg'); ">
+                                        </span>
+
+                                    <a href="https://github.com/kingpingx" class="project-github-link">kingpingx</a> /
+                                    <a class="project-github-link project-github-repo-link">home </a>
+                                </div>
+                                <div class="project-tab-container">
+                                    <div class="project-tab left-extreme-tab"></div>
+                                    <a class="project-tab selected-tab"
+                                        onclick="openTab('Description', this)">
+                                        <span style="background-image: url('description.svg'); ">
+                                        </span>
+                                        Description</a>
+                                    <a class="project-tab unselected-tab" onclick="openTab('TechUsed', this)">
+                                        <span style="background-image: url('techUsed.svg'); ">
+                                        </span>
+                                        Tech Used</a>
+                                    <div class=" project-tab right-extreme-tab"></div>
+                                </div>
+
+                                <div id="Description" class="tab-detail">      
+                                   <span>Description</span>
+                                </div>
+
+                                <div id="TechUsed" class="tab-detail" style="display:none">
+                                    <span class="techspan">Tech Used in Blocks</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <span>Last Updated on </span><span class="project-date"> Dec 27, 2022 </span>
+                            <a class="project-live-link">Project Website link</a>
+                        </div>
+                    </div>
+                    <div class="project-list-container">
+                        <div class="navigation-container">
+                            <button class="btn" aria-label="Previous" onclick="previousProject()">
+                                <img src="left-navigation.svg"/>
+                            </button>
+                            <span class="index-span selectedProjectIndex">1</span>
+                            <span>/</span>
+                            <span class="index-span totalProjects">2</span>
+                            <button class="btn" aria-label="Next" onclick="nextProject()">
+                                <img src="right-navigation.svg"/>
+                            </button>
+                        </div>
+                        <div class="project-list">
+                            <span id="ChatUp" onclick="setCurrentProject(0, true)">Chat Up</span>
+                            <span id="EduCare" onclick="setCurrentProject(1, true)">Edu-care</span>
+                            <span id="Avekshaka" onclick="setCurrentProject(2, true)">Avekshaka</span>
+                            <span id="CampusTube" onclick="setCurrentProject(3, true)">Campus Tube</span>
+                            <span id="Vizit" onclick="setCurrentProject(4, true)">Vizit</span>
+                            <span id="Speech2Text" onclick="setCurrentProject(5, true)">Speech2Text</span>
+                            <span id="TheCodersBank" onclick="setCurrentProject(6, true)">The Coder's Bank</span>
+                            <span id="BouncingBall" onclick="setCurrentProject(7, true)">Bouncing Ball</span>
+                            <div class="description">
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:100%; width: 100%; display: flex; flex-direction: column; background-image: url('projectBgEnhancer.jpg'); background-size: 100% 90%; top:0; background-repeat: no-repeat; background-position-x: left; background-position-y : bottom; position: absolute; z-index: -2;" id="project-view"></div>
+            </div>
+        </div>
+    </section>
+    <section class="experienceSection" id="experience">
+        <div id="chat-up1" style="width: 200px; height: 200px;"></div>
+        <div id="chat-up2" style="width: 200px; height: 200px;"></div>
+        experience
+        <div id="chat-up3" style="width: 200px; height: 200px;"></div>
+        <div id="chat-up4" style="width: 200px; height: 200px;"></div>
+    </section>
+    <section class="aboutSection" id="about">
+        <div id="chat-up1" style="width: 200px; height: 200px;"></div>
+        <div id="chat-up2" style="width: 200px; height: 200px;"></div>
+        about
+        <div id="chat-up3" style="width: 200px; height: 200px;"></div>
+        <div id="chat-up4" style="width: 200px; height: 200px;"></div>
+    </section>
+
+</body>
+
+</html>

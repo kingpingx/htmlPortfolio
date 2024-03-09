@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700');
+
+@keyframes fade-out {
+  0% {
+    display: block;
+    width: 100%;
+  }
+  100% {
+    display: none;
+    width: 0%;
+  }
+  
+}
+
+.carousel {
+  display: flex;
+
+  .carousel-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    position: relative;
+
+    .carousel-image-container {
+      height: inherit;
+      width: inherit;
+      position: relative;
+
+      .slides {
+        height: inherit;
+        width: inherit;
+        overflow: hidden;
+
+        img{
+          height: 100%;
+          width: 100%;
+          transition-property: width;
+          animation: fade-out 1s linear;
+        }
+      }
+    }
+
+    .carousel-button {
+      position: absolute;
+      background-color: white;
+      width: 30px;
+
+      .carousel-button-icon {
+        width: 10px;
+      }
+    }
+
+    .prev-btn {
+      left: 0;
+    }
+
+    .next-btn {
+      right: 0;
+    }
+
+    .carousel-page-dots{
+      li{
+        list-style: none;
+        width: 40px;
+      }
+    }
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
